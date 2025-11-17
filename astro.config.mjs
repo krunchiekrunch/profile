@@ -4,7 +4,6 @@ import sitemap from '@astrojs/sitemap'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypePresetMinify from 'rehype-preset-minify'
 import react from '@astrojs/react'
-import vercelServerless from '@astrojs/vercel/serverless'
 
 const rehypeExternalLinksConfig = [
 	rehypeExternalLinks,
@@ -12,13 +11,9 @@ const rehypeExternalLinksConfig = [
 ]
 
 export default defineConfig({
-	site: 'https://kognise.dev/',
+	site: 'https://krunchie.xyz/',
 	trailingSlash: 'never',
-	output: 'server',
-	adapter: vercelServerless({ analytics: true }),
-	server: {
-		port: parseInt(process.env.PORT || '3000')
-	},
+	output: 'static',
 	integrations: [
 		mdx({
 			rehypePlugins: [ rehypeExternalLinksConfig, rehypePresetMinify ]
