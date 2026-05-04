@@ -79,7 +79,7 @@ import BackgroundEffect from '../components/BackgroundEffect.astro'
 
 	## Homelab
 
-	At home, I have a micro datacenter that I self host various applications on, the main PC runs Proxmox, which have a few containers such as
+	At home, I have a micro datacenter that I self host various applications on, the main PC runs Proxmox VE, which have a few containers such as
 
 	- Vaultwarden (self-hosted password manager)
 	- n8n (workflow automation)
@@ -87,12 +87,40 @@ import BackgroundEffect from '../components/BackgroundEffect.astro'
 
 	and more...
 
+	```
+	OS: Proxmox VE 9.1.9 x86_64
+	Bios (UEFI): 1806 (18.6)
+	Bootmgr: Linux Boot Manager - SYSTEMD-BOOTX64.EFI
+	Board: PRIME H410M-K (Rev 1.xx)
+	Kernel: Linux 7.0.0-3-pve
+	Init System: systemd 257.9-1~deb13u1
+	CPU: Intel(R) Pentium(R) Gold G6400 (4) @ 4.00 GHz
+	GPU: Intel UHD Graphics 610 (12) @ 1.05 GHz [Integrated]
+	Memory: 1.95 GiB / 7.60 GiB (26%)
+	Physical Memory 1: 4.00 GiB - DDR4-2133 (Corsair)
+	Physical Memory 2: 4.00 GiB - DDR4-2133 (Samsung)
+	Physical Disk (ATA WDC WD3000JS-63P): 279.46 GiB [HDD, Fixed]
+	Physical Disk (ATA WDC WD3000JS-63P): 279.46 GiB [HDD, Fixed]
+	```
+
 	On my Raspberry Pi 3B, I run services like 
 
 	- meshtasticd (off-grid, mesh communication network)
 	- ADS-B related (fr24feed, adsbexchange feeder, tar1090, graphs1090, etc...)
 
 	plus many more that I can't remember!
+
+	```
+	OS: Raspberry Pi OS aarch64
+	Host: Raspberry Pi 3 Model B Rev 1.2
+	Board: 3-model-b
+	Kernel: Linux 6.12.75+rpt-rpi-v8
+	Init System: systemd 257.9-1~deb13u1
+	CPU: BCM2837 (4) @ 1.20 GHz - 39.7°C
+	GPU: Broadcom bcm2835-vc4 [Integrated]
+	Memory: 579.50 MiB / 905.98 MiB (64%)
+	Physical Disk (mmcblk0): 29.72 GiB [SSD, Fixed]
+	```
 
 	I'll add a network diagram here some day...
 	
